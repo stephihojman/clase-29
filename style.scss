@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+$background-color: rgba(47, 165, 120, 0.7);
+$main-font: "Roboto", sans-serif;
+$title-font: "Lato", sans-serif;
+$main-font-color: #fff;
+$second-font-color: #333;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primero {
+  @include flex-center;
+  flex-direction: column;
+  background-size: 100% 100%;
+  height: 900px;
+  background-image: linear-gradient(
+      to bottom,
+      $background-color,
+      $background-color
+    ),
+    url("./header-bg_2019-06-04/header-bg.jpg");
+}
+.header {
+  @include flex-center;
+  justify-content: space-between;
+  color: $main-font-color;
+  font-family: $title-font;
+  background-size: 100% 100%;
+  height: 80px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(
+    to bottom,
+    $background-color,
+    $background-color
+  );
+}
+.solar {
+  margin-left: 15px;
+}
+.menu {
+  display: flex;
+  margin-right: 15px;
+}
+p {
+  margin-right: 5px;
+}
+.titulo {
+  height: 350px;
+  text-align: center;
+  color: $main-font-color;
+  font-family: $title-font;
+  font-size: 50px;
+}
+.texto-ppal {
+  text-align: center;
+  font-family: $main-font;
+  color: $main-font-color;
+}
